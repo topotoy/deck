@@ -82,10 +82,7 @@
       if (path.endsWith(".data")) { return ("./" + path); }
       return (prefix + path);
     },
-    onRuntimeInitialized: function () { },
-    contextAttributes: {
-      premultipliedAlpha: false
-    }
+    onRuntimeInitialized: function () { }
   };
   var wasm_is_alive = false;
   function wasm_i(op, d0, d1, d2) { Module.ccall("wasm_i", null, ["string", "string", "string", "string"], [op, d0, d1, d2]); }
